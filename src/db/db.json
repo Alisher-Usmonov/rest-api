@@ -1,1 +1,4 @@
-{"courses":[{"id":1,"name":"JavaScript Crash Course","author":"Traversy Media","price":"Free","slug":"javascript-crash-course"},{"id":2,"name":"Flutter Crash Course","author":"Brad Traversy","price":"free","slug":"flutter-crash-course"}],"orders":[{"id":1,"course_id":1,"time":"10/10/2021, 11:17:59 AM","slug":"javascript-crash-course"},{"id":2,"course_id":2,"time":"10/10/2021, 11:44:45 AM","slug":"flutter-crash-course"}]}
+{
+  "courses": [],
+  "orders": []
+}
