@@ -9,7 +9,9 @@ module.exports = {
 
         res.status(200).json({
             ok: true,
-            ...db
+            courses: [
+                ...db.courses
+            ]
         })
     },
     async CourseGET(req, res) {
@@ -46,7 +48,7 @@ module.exports = {
         if(find) {
             res.status(400).json({
                 ok: false,
-                message: "This book is already exist!"
+                message: "This course is already exist!"
             })
             return;
         }
@@ -62,7 +64,7 @@ module.exports = {
         await fs.writeFile(path.join(__dirname, "..", "db", "db.json"), JSON.stringify(db));
         res.status(200).json({
             ok: true,
-            message: "New course successfully added to database !"
+            message: "New course successfully added to database!"
         })
 
     },
