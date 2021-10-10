@@ -1,4 +1,1 @@
-{
-  "courses": [],
-  "orders": []
-}
+{"courses":[{"id":1,"name":"Next.js Crash Course","author":"Brad Traversy","price":"free","slug":"nextjs-crash-course"}],"orders":[]}

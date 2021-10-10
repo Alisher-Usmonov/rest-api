@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind-experimental.min.css" integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="min-h-screen min-w-screen lg:overflow-hidden px-2 lg:px-20 lg:py-5 py-2 shadow-xl">
+    <div class="min-w-full min-h-full bg-gradient-to-r from-blue-400 to-indigo-500 rounded-lg p-3">
+        <h1 class="text-center text-2xl my-3 text-white font-semibold">Online Course REST API</h1>
+        <p class="text-2xl mb-3 text-white font-semibold tracking-wide">Methods</p>
+        <ul class="lg:ml-10 list-none select-none">
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">GET</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/course">/course</a> - take the courses data</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">GET</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/course/:slug">/course/:slug</a> - take the course data with slug</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">GET</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/order">/order</a> - take the orders data</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">GET</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/order/:slug">/order/:slug</a> - take the order data with slug</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">POST</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/course">/course</a> - add new course</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">POST</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/order/:slug">/order/:slug</a> - add new order with slug</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">PATCH</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/course/:slug">/course/:slug</a> - update the course with slug</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">DELETE</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/course/:slug">/course/:slug</a> - delete the course with slug</li>
+            <li class="text-white text-lg p-2 bg-blue-300 my-1 rounded w-full lg:w-6/12"><span class="text-lg text-purple-600 font-semibold">DELETE</span>&nbsp;&nbsp;<a class="text-indigo-900" href="/order/:slug">/course/:slug</a> - delete the order with slug</li>
+        </ul>
+    </div>
+</body>
+</html>

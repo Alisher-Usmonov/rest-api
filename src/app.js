@@ -1,11 +1,16 @@
 const express = require("express"),
     fs = require("fs"),
     path = require("path"),
+    auth = require("./middlewares/Auth")
     morgan = require("morgan");
 const app = express();
 
 // ENV
 const { PORT } = require("../config");
+
+// Settings
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
 
 // Middlewares;
 app.use(express.json());
